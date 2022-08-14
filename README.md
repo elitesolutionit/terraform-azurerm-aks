@@ -18,7 +18,7 @@ module "aks" {
       load_balancer_sku = "standard", network_plugin = "kubenet" }
   }
 
-  subcription_name    = "EliteSolutionsIT-DEV"
+  subcription_name    = "< your subscription name >"
   env                 = "dev"
   agent_name          = "devagent"
   agent_count         = "2"
