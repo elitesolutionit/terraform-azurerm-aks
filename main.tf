@@ -31,7 +31,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
 
   default_node_pool {
     name       = var.agent_name
-    node_count = var.agent_count
+    node_count = var.node_count
     vm_size    = var.vm_size
   }
 
@@ -50,6 +50,5 @@ resource "azurerm_kubernetes_cluster" "k8s" {
       network_plugin    = each.value["network_plugin"]
     }
   }
-
   tags = local.common_tags
 }
