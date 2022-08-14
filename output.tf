@@ -5,12 +5,6 @@ output "resource_group_name" {
 output "client_key" {
   value = azurerm_kubernetes_cluster.k8s.client_key
 }
-
-output "client_certificate" {
-  value = azurerm_kubernetes_cluster.k8s.client_certificate
-}
-
-
 output "cluster_username" {
   value = azurerm_kubernetes_cluster.k8s.username
 }
